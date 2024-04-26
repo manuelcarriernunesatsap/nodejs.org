@@ -104,15 +104,15 @@ const interval = setInterval(() => {
 
 If a function always takes the same amount of time, it's all fine:
 
-![setInterval working fine](/static/images/learn/javascript-timers/setinterval-ok.png)
+![setInterval working fine](/public/static/images/learn/javascript-timers/setinterval-ok.png)
 
 Maybe the function takes different execution times, depending on network conditions for example:
 
-![setInterval varying duration](/static/images/learn/javascript-timers/setinterval-varying-duration.png)
+![setInterval varying duration](/public/static/images/learn/javascript-timers/setinterval-varying-duration.png)
 
 And maybe one long execution overlaps the next one:
 
-![setInterval overlapping](/static/images/learn/javascript-timers/setinterval-overlapping.png)
+![setInterval overlapping](/public/static/images/learn/javascript-timers/setinterval-overlapping.png)
 
 To avoid this, you can schedule a recursive setTimeout to be called when the callback function finishes:
 
@@ -128,7 +128,7 @@ setTimeout(myFunction, 1000);
 
 to achieve this scenario:
 
-![Recursive setTimeout](/static/images/learn/javascript-timers/recursive-settimeout.png)
+![Recursive setTimeout](/public/static/images/learn/javascript-timers/recursive-settimeout.png)
 
 `setTimeout` and `setInterval` are available in Node.js, through the [Timers module](https://nodejs.org/api/timers.html).
 
